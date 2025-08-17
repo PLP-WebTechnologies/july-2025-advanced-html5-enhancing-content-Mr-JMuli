@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Assignment</title>
+  <meta name="description" content="HTML5 assignment demonstrating lists, tables, media, and advanced form validation.">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>HTML5 Advanced Content & Forms</h1>
+    <p>This page demonstrates lists, tables, media embedding, and a structured form with HTML5 validation.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Web Development Topics</h2>
+    <p>Here are some key areas in modern web development:</p>
+    <ul>
+      <li>Semantic HTML5 Structure</li>
+      <li>Accessibility & ARIA Landmarks</li>
+      <li>Responsive Web Design</li>
+      <li>SEO Optimization</li>
+    </ul>
+
+    <h3>Steps to Build a Web Page</h3>
+    <ol>
+      <li>Plan the layout and structure.</li>
+      <li>Write semantic HTML5 code.</li>
+      <li>Apply accessibility best practices.</li>
+      <li>Enhance styling with CSS.</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Sample Data Table</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <caption>Popular Web Browsers and Release Years</caption>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Developer</th>
+          <th>Initial Release</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Chrome</td>
+          <td>Google</td>
+          <td>2008</td>
+        </tr>
+        <tr>
+          <td>Mozilla Firefox</td>
+          <td>Mozilla Foundation</td>
+          <td>2002</td>
+        </tr>
+        <tr>
+          <td>Microsoft Edge</td>
+          <td>Microsoft</td>
+          <td>2015</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Examples</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder example image">
+      <figcaption>A sample placeholder image.</figcaption>
+    </figure>
+
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Sample Video</h3>
+    <video width="320" height="240" controls>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="password" placeholder="At least 8 characters" required minlength="8"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="kenya">Kenya</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="design" name="interests" value="design">
+        <label for="design">Design</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Details</legend>
+
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..." minlength="10" required></textarea><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment | Designed for Accessibility & Usability</p>
+  </footer>
+</body>
+</html>
